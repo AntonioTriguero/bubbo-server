@@ -1,0 +1,23 @@
+- npm init -y
+
+- npm i express
+
+Morgan is a popular logging middleware for Node.js HTTP servers. It provides a concise and customizable way to log HTTP requests and responses. Morgan can be used with frameworks like Express.js to log request details such as HTTP method, URL, response status, response time, and more:
+
+- npm i morgan
+
+## FIREBASE
+
+- npm i firebase
+
+firebase-admin is the Firebase Admin SDK, which allows you to interact with Firebase services from privileged environments, such as a server or a Node.js application. It provides functionality for managing and authenticating users, reading and writing to the Firebase Realtime Database, and accessing other Firebase services:
+
+- npm i firebase-admin
+
+TO RUN SERVER:
+
+- npm run dev
+
+FOR CORS:
+
+- npm i cors
