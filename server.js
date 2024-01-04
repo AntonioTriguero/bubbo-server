@@ -34,7 +34,7 @@ app.get('/books/:id', (req, res) => {
 
 // Endpoint to get all books: 
 
-app.get('/', (req, res) => {
+app.get('/books', (req, res) => {
   const docRef = collection(db, 'books');
   getDocs(docRef)
     .then((querySnapshot) => {
