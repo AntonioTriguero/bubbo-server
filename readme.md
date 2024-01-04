@@ -10,7 +10,7 @@ Proyecto en Firebase y configurar Firebase Firestore como base de datos. crear u
 - PUT /books/{id}: Actualiza la información de un libro existente según su ID.
 - DELETE /books/{id}: Elimina un libro específico según su ID.
 
-- Mostrar los datos en la aplicación React Native de la [Parte 2](https://github.com/vanesascode/bubbo-client). La API se puede encontrar en el siguiente link: https://server-biblioteca-bubbo-vanesascode.onrender.com/
+- Mostrar los datos en la aplicación React Native de la [Parte 2](https://github.com/vanesascode/bubbo-client). La API se puede encontrar en el siguiente link: https://server-biblioteca-bubbo-vanesascode.onrender.com/books
 
 ## Descripción del proyecto:
 
