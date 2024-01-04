@@ -1,19 +1,13 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
-
 const { collection, getDocs, getDoc, doc, setDoc, deleteDoc } = require('firebase/firestore');
 const { db } = require('./firebase/config');
+
 
 // Initialize express app:
 const app = express();
 
-// Middleware:
-const cors = require('cors');
-
-app.use(cors({
-  origin: '*',
-}))
 
 // Middleware - helps parse and handle data sent in the request body. It extracts JSON data from the request body and makes it available in the req.body object:
 app.use(bodyParser.json());

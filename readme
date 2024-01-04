@@ -1,23 +1,29 @@
-- npm init -y
+# Biblioteca libros - Bubbo prueba técnica - SERVER SIDE
+
+## Instrucciones:
+
+Proyecto en Firebase y configurar Firebase Firestore como base de datos. crear una API REST utilizando Node.js y Express. La API debe tener los siguientes endpoints:
+
+- GET /books: Devuelve una lista de todos los libros almacenados en Firebase Firestore.
+- GET /books/{id}: Devuelve los detalles de un libro específico según su ID.
+- POST /books: Crea un nuevo libro con la información proporcionada en la solicitud.
+- PUT /books/{id}: Actualiza la información de un libro existente según su ID.
+- DELETE /books/{id}: Elimina un libro específico según su ID.
+
+- Mostrar los datos en la aplicación React Native de la [Parte 2](https://github.com/vanesascode/bubbo-client). La API se puede encontrar en el siguiente link: https://server-biblioteca-bubbo-vanesascode.onrender.com/
+
+## Descripción del proyecto:
+
+Hay una colección llamada 'books' en la base de datos de Firebase Firestore. Los 5 endpoints solicitados están en el archivo principal 'server.js'. Estos interactuan con la base de datos a través de la librería firebase-admin, instanciada en el archivo config.js, dentro de la carpeta 'firebase'.
+
+## Herramientas:
+
+### Paquetes instalados:
 
 - npm i express
-
-Morgan is a popular logging middleware for Node.js HTTP servers. It provides a concise and customizable way to log HTTP requests and responses. Morgan can be used with frameworks like Express.js to log request details such as HTTP method, URL, response status, response time, and more:
-
-- npm i morgan
-
-## FIREBASE
-
 - npm i firebase
-
-firebase-admin is the Firebase Admin SDK, which allows you to interact with Firebase services from privileged environments, such as a server or a Node.js application. It provides functionality for managing and authenticating users, reading and writing to the Firebase Realtime Database, and accessing other Firebase services:
-
 - npm i firebase-admin
 
-TO RUN SERVER:
+### Run Command:
 
 - npm run dev
-
-FOR CORS:
-
-- npm i cors

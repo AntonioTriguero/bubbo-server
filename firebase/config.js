@@ -1,5 +1,5 @@
-const { initializeApp } = require("firebase/app");
 const { getFirestore } = require("firebase/firestore");
+const { initializeApp } = require('firebase-admin/app');
 
 
 // Your web app's Firebase configuration
