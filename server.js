@@ -59,9 +59,9 @@ app.get('/', (req, res) => {
 // Endpoint to create a new book: 
 
 app.post('/books', (req, res) => {
-  const { title, description, category } = req.body;
+  const { title, description, category, photo } = req.body;
   const docRef = doc(collection(db, 'books'));
-  const newBook = { title, description, category };
+  const newBook = { title, description, category, photo };
   setDoc(docRef, newBook)
     .then(() => {
       res.status(201).json({ message: 'Book added successfully' });
@@ -75,9 +75,9 @@ app.post('/books', (req, res) => {
 
 app.put('/books/:id', (req, res) => {
   const { id } = req.params;
-  const { title, description, category } = req.body;
+  const { title, description, category, photo } = req.body;
   const docRef = doc(db, 'books', id);
-  const updatedBook = { title, description, category };
+  const updatedBook = { title, description, category, photo };
   setDoc(docRef, updatedBook, { merge: true })
     .then(() => {
       res.status(200).json({ message: 'Book updated successfully' });
